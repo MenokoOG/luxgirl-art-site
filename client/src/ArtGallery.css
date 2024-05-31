@@ -1,0 +1,68 @@
+
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-container {
+  perspective: 1000px;
+}
+
+.image-container:hover .image {
+  transform: rotateY(180deg);
+}
+
+.image {
+  transition: transform 1s;
+  backface-visibility: hidden;
+}
+/* ArtGallery.css */
+.background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+  cursor: grab;
+}
+
+.scroll-container:active {
+  cursor: grabbing;
+}
+
+.image-card {
+  min-width: 300px; /* Adjust as needed */
+  flex-shrink: 0;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.background-image {
+  background: url('/path/to/your/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+

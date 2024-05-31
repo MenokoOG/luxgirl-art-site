@@ -1,0 +1,66 @@
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.image-container {
+  perspective: 1000px;
+}
+
+.image-container:hover .image {
+  transform: rotateY(180deg);
+}
+
+.image {
+  transition: transform 1s;
+  backface-visibility: hidden;
+}
+
+.background-image {
+  background-size: 100vh;
+  background-position: center;
+}
+
+/* App.css or a separate CSS file */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* App.css */
+
+
+
+.background-image {
+  background-image: url('../public/A visually appealing digitaures.png');
+}
+
+
